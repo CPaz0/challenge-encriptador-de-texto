@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    background-color: #F3F5FC;
+    max-width: 1440px;
+    min-width: 370px;
+    margin: 2px;
+}
+/*Conatiner Principal*/
+.container{
+    width: 100%;
+}
+/*Conatiner Logo*/
+.containerLogo{
+    
+}
+.logo1{
+    margin: 6%;
+}
+.logo2{
+    display: none;
+}
+/*Conatiner Ingreso de Datos*/
+.containerIngresoDeDatos{
+    display: flex;
+    flex-direction: column;
+    margin: 18px;
+}
+.textareaIngresoDeDatos{
+    width: 100%;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    font-size: 28px;
+    min-height: 300px;
+}
+.containerP{
+    display: flex;
+    margin: 15px;
+    margin-left: 20px;
+    gap: 15px;
+    
+}
+
+    
+.containerBotonesIngresoDeDatos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.botonIngresoDeDatos{
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    width: 90%;
+    height: 65px;
+    border-radius: 24px;
+}
+.botonIngresoDeDatos:hover{
+    background-color: #0A3871;
+}
+.botonIngresoDeDatos:active{
+    background-color: azure;
+}
+
+
+
+/*Conatiner Mostrar de Datos*/
+.containerMostrarDatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px;
+}
+.containerMostrarRectangulo{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 32px;
+    min-width: 120px;
+    padding: 10px;
+
+}
+.contenedorImagen{
+    width:90% ;
+}
+.imagen{
+    display: none;
+}
+
+.pContainerMostrar{
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    width: 90%;
+    min-height: 100px;
+    padding-top: 1px;
+    max-width: 90%;
+}
+.mostrarDatos{
+    font-size: 22px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.botonCopiarDatos{
+    display: none;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    width: 90%;
+    height: 65px;
+    border-radius: 24px;
+    margin: 10px;
+}
+.botonCopiarDatos:hover{
+    background-color: #0A3871;
+}
+.botonCopiarDatos:active{
+    background-color: azure;
+}
+/*Footer*/
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+
+@media(min-width:500px){
+    .containerBotonesIngresoDeDatos{
+        flex-direction:row;
+        align-items: center;
+        width: 100%;
+    }
+    .botonCopiarDatos{
+        width: 90%;
+    }
+    .textareaIngresoDeDatos{
+        min-height: 500px;
+    }
+    .mostrarDatos{
+        min-height: 125px;
+    }
+}
+
+
+@media(min-width:800px){
+
+    body{
+        margin: 15px;
+    }
+    /*Conatiner Principal*/
+    .container{
+        display: flex;
+        margin: 2px;
+    }
+    
+    /*Conatiner Logo*/
+    .containerLogo{
+        width: auto;
+    }
+    .logo1{
+        display: none;
+
+    }
+    .logo2{
+        display: flex;
+        margin: 6%;
+        max-width: 90%;
+        
+    }
+    /*container*/
+    .containerEncriptar{
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
+    /*--------------------------------*/
+    /*Conatiner Ingreso de Datos*/
+    .containerIngresoDeDatos{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 1%;
+        margin-top:75px;
+    }
+    .containerTextarea{
+        height: 75%;
+    }
+    .textareaIngresoDeDatos{
+        min-height: 70%;
+    }
+             
+    .containerBotonesIngresoDeDatos{
+        display: flex;
+    }
+
+    /*-------------------------------------*/
+    /*Conatiner Mostrar de Datos*/
+    .containerMostrarDatos{
+        width: 40%;
+        margin: 1%;
+    }
+    .containerMostrarRectangulo{
+        width: 100%;
+        border-radius: 32px;
+        min-width: 120px;
+        padding: 10px;
+        min-height: 700px;
+
+    }
+    .contenedorImagen{
+        width:90% ;
+        height: 96.5%;
+    }
+    .imagen{
+        display:flex;
+        width: 80%;
+        padding-top: 100px;
+        
+    }
+
+    .mostrarDatos{
+        height: 87%; 
+        align-items: center;   
+    }
+}

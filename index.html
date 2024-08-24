@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+    <div class="container" >
+        
+        <div class="containerLogo" >
+            <img class="logo1" src="./iconos/Vector.png" alt="">
+            <img class="logo2" src="./iconos/Logo.png" alt="">
+        </div>
+        <div class="containerEncriptar">
+            <div class="containerIngresoDeDatos">
+                <div class="containerTextarea" >
+                <textarea class="textareaIngresoDeDatos" id="entradaUsuario" >Ingrese el texto aquí
+                </textarea> 
+                </div>
+
+                <div class="containerButtonIngresoDeDatos">
+                    <div class="containerP">
+                        <img src="./iconos/exclama.png" alt="" class="exclama" id="exclama">
+                        <p class="pIngresoDeDatos">Solo letras minusculas y sin acentos</p>
+                    </div>
+                    <div class="containerBotonesIngresoDeDatos">
+                        <button class="botonIngresoDeDatos" onclick="encriptar()" id="botonEncriptar">Encriptar</button>
+                        <button class="botonIngresoDeDatos" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="containerMostrarDatos">
+                <div class="containerMostrarRectangulo">
+                    <div class="contenedorImagen">
+                                        
+                        <div class="mostrarDatos" id="elementoDePrueba">
+                            <img class="imagen" id="imag" src="./iconos/Muñeco.png" alt="Muñeco">
+                            <p id="salidaDeTexto" class="pContainerMostrar">Ningún mensaje fue encontrado <br> <br></p>
+                            Ingresa el texto que desees encriptar o desencriptar.
+                        </div>
+                        <div class="containerBotonCopiar">
+                        <button class="botonCopiarDatos" onclick="copiar()" id="botonCopiarDatos">Copiar</button>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <p>Desarrollado por CP</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
